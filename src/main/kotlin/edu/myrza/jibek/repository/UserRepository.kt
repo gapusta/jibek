@@ -1,8 +1,15 @@
 package edu.myrza.jibek.repository
 
 import edu.myrza.jibek.model.User
-import org.springframework.data.repository.reactive.ReactiveCrudRepository
-import org.springframework.stereotype.Repository
+import reactor.core.publisher.Flux
 
-@Repository
-interface UserRepository : ReactiveCrudRepository<User, String>
+//import org.springframework.data.repository.reactive.ReactiveCrudRepository
+//import org.springframework.stereotype.Repository
+
+//@Repository
+//interface UserRepository : ReactiveCrudRepository<User, String>
+interface UserRepository {
+
+    fun findAll(): Flux<User>
+
+}

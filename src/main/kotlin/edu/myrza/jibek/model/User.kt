@@ -1,11 +1,11 @@
 package edu.myrza.jibek.model
 
-import org.springframework.data.annotation.Id
-import org.springframework.data.relational.core.mapping.Table
+//import org.springframework.data.annotation.Id
+//import org.springframework.data.relational.core.mapping.Table
 
-@Table("usr")
+//@Table("usr")
 data class User(
-    @Id
+//    @Id
     val username: String,
     val password: String
 )
